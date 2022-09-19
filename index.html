@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 
 <head>
     <meta charset="UTF-8">
@@ -19,45 +19,60 @@
 <body>
     <header>
         <!-- Navbar -->
-        <div class="navbar text-black font-bold bg-slate-200">
+        <div class="navbar p-3 lg:p-4 text-white font-bold bg-slate-800">
             <div class="flex-1">
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <img src="image/google-logo-9824.png" class="w-20" alt="">
+                <span class="text-4xl">Pixel Store</span>
             </div>
             <div class="flex-none gap-2">
-                <ul class="flex text-xl">
+                <ul class="hidden lg:flex text-xl">
                     <li class="mr-10">
-                        <span><i class="fa-solid fa-house"></i></span>
+                        <span><i class="fa-solid fa-house text-yellow-500"></i></span>
                         <span>HOME</span>
                     </li>
                     <li class="mr-10">
-                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span><i class="fa-solid fa-heart text-yellow-500"></i></span>
                         <span>WISHLIST</span>
                     </li>
                     <li class="mr-10">
-                        <span><i class="fa-solid fa-trash"></i></span>
+                        <span><i class="fa-solid fa-trash text-yellow-500"></i></span>
                         <span>RECYCLE BIN</span>
                     </li>
-                    <li class="mr-10">
-                        <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        <span>Cart</span>
+                    <li class="mr-10 relative">
+                        <span><i class="fa-solid fa-cart-shopping text-yellow-500"></i></span>
+                        <span class="badge badge-secondary absolute top-[-.8rem]">+99</span>
                     </li>
                 </ul>
-                <div class="dropdown dropdown-end">
+                <div class="dropdown dropdown-end block lg:hidden">
                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                        <div class="w-10 rounded-full">
-                            <img src="https://placeimg.com/80/80/people" />
-                        </div>
+                        <i class="fa-solid fa-bars text-2xl"></i>
                     </label>
                     <ul tabindex="0"
-                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52 text-black">
                         <li>
-                            <a class="justify-between">
-                                Profile
-                                <span class="badge">New</span>
+                            <a>
+                                <span><i class="fa-solid fa-house text-yellow-500"></i></span>
+                                <span>HOME</span>
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li>
+                            <a>
+                                <span><i class="fa-solid fa-heart text-yellow-500"></i></span>
+                                <span>WISHLIST</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span><i class="fa-solid fa-trash text-yellow-500"></i></span>
+                                <span>RECYCLE BIN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span><i class="fa-solid fa-cart-shopping text-yellow-500"></i></span>
+                                <span>CART</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
