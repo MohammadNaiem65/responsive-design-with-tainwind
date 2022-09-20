@@ -26,20 +26,23 @@
             </div>
             <div class="flex-none gap-2">
                 <ul class="hidden lg:flex text-xl">
-                    <li class="mr-10">
+                    <li class="mr-10 hover:cursor-pointer">
                         <span><i class="fa-solid fa-house text-yellow-500"></i></span>
-                        <span>HOME</span>
+                        <span class="hover:text-sky-500">HOME</span>
                     </li>
-                    <li class="mr-10">
+                    <li class="mr-10 hover:cursor-pointer">
                         <span><i class="fa-solid fa-heart text-yellow-500"></i></span>
-                        <span>WISHLIST</span>
+                        <span class="hover:text-sky-500">WISHLIST</span>
                     </li>
-                    <li class="mr-10">
+                    <li class="mr-10 hover:cursor-pointer">
                         <span><i class="fa-solid fa-trash text-yellow-500"></i></span>
-                        <span>RECYCLE BIN</span>
+                        <span class="hover:text-sky-500">RECYCLE BIN</span>
                     </li>
-                    <li class="mr-10 relative">
-                        <span><i class="fa-solid fa-cart-shopping text-yellow-500"></i></span>
+                    <li class="mr-10 relative hover:cursor-pointer">
+                        <label for="my-drawer" class="drawer-button">
+                            <span class="hover:cursor-pointer"><i class="fa-solid fa-cart-shopping text-yellow-500"></i>
+                            </span>
+                        </label>
                         <span class="badge badge-secondary absolute top-[-.8rem]">+99</span>
                     </li>
                 </ul>
@@ -70,11 +73,32 @@
                         <li>
                             <a>
                                 <span><i class="fa-solid fa-cart-shopping text-yellow-500"></i></span>
-                                <span>CART</span>
+                                <label for="my-drawer" class="drawer-button">
+                                    <span class="hover:cursor-pointer">CART
+                                    </span>
+                                </label>
+                                <!-- <span>CART</span> -->
                             </a>
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <!-- Drawer -->
+        <div class="drawer drawer-end">
+            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content mt-6">
+                <!-- Page content here -->
+                <!-- Cards -->
+
+            </div>
+            <div class="drawer-side">
+                <label for="my-drawer" class="drawer-overlay"></label>
+                <!-- Sidebar content here -->
+                <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+                    <li><a>Sidebar Item 1</a></li>
+                    <li><a>Sidebar Item 2</a></li>
+                </ul>
             </div>
         </div>
     </header>
